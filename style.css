@@ -1,0 +1,48 @@
+.images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.emoji {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150px;
+    padding: 5px;
+    width: 200px;
+    background-color: purple;
+    border: 2px grey solid;
+    border-radius: 50%;
+}
+.emoji:hover{
+    border-color:black ;
+    cursor: pointer;
+}
+.scores {
+    display: flex;
+    justify-content: center; /* Center scores horizontally */
+    margin-top: 100px;
+    align-items: center;
+    gap: 50px; /* Optional: Adds space between score sections */
+}
+
+.score {
+    font-weight: bolder;
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 30px auto; /* Center button horizontally with margin auto */
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    height: auto;
+    width: auto; /* Optional: Adjust width as needed */
+    cursor: pointer;
+    font-size:40px ;
+}
