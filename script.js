@@ -5,16 +5,14 @@ const choice=document.querySelectorAll(".choise");
 choice.forEach((choice)=>{
     choice.addEventListener("click", ()=>{
         const userChoiceId=choice.getAttribute("id");
-        console.log("User chose: "+ userChoiceId);
         playGame(userChoiceId);
     });
 });
 function playGame(userChoiceId){
     let compChoices=["rock", "paper", "scissors"];
-    //making randon computer chiose
+    //making random computer chiose
     let randomindx=Math.floor(Math.random() * 3);
     let compChoiceId=compChoices[randomindx];
-    console.log("Computer chose:", compChoiceId); 
 
     let message=document.querySelector("button");
     if(compChoiceId===userChoiceId){
